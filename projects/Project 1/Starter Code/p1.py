@@ -56,6 +56,7 @@ class LQ3K:
         return np.dot(self.unitary, initial_state)
 
     def __neighbour_swap(self, idx_1):
+        print(f"neighbour swap {idx_1}")
         """apply SWAP gate to the qubit at idx_1 and idx_1+1"""
         assert idx_1 >= 0 and idx_1 < self.num_qubits - 1
         # Define the SWAP gate as a NumPy array
